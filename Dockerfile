@@ -1,4 +1,4 @@
-ARG CADDY_VERSION=2.7.7
+ARG CADDY_VERSION=2.7.6
 FROM caddy:${CADDY_VERSION}-builder AS builder
 
 RUN xcaddy build \
