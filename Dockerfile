@@ -1,8 +1,8 @@
-ARG CADDY_VERSION=2.10.0
+ARG CADDY_VERSION=2.10.2
 FROM caddy:${CADDY_VERSION}-builder AS builder
 
 RUN xcaddy build \
-    --with github.com/lucaslorentz/caddy-docker-proxy/v2@v2.9.2
+    --with github.com/lucaslorentz/caddy-docker-proxy/v2@v2.10.0
 
 FROM caddy:${CADDY_VERSION}-alpine
 
